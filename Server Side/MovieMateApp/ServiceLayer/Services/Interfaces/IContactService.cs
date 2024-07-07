@@ -1,0 +1,24 @@
+﻿using DomainLayer.Entites;
+using ServiceLayer.DTOs.Account;
+using ServiceLayer.DTOs.Contact;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ServiceLayer.Services.Interfaces
+{
+    public interface IContactService
+    {
+        Task<ApiResponse> Create(ContactCreateDto contact);
+      
+        Task<List<ContactListDto>> GetAll();
+        Task Delete(int id);
+        Task SoftDelete(int id);
+        Task Update(int id, ContactUpdateDto contact);
+        Task<ContactListDto> GetLast();
+        Task<List<ContactListDto>> Search(string searchText);
+        
+    }
+}

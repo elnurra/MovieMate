@@ -1,0 +1,164 @@
+.section {
+  padding: 40px 0;
+  position: relative;
+}
+
+.section__title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.section__title b {
+  font-weight: 700;
+}
+
+.section__title--center {
+  text-align: center;
+}
+
+.section__title--no-margin {
+  margin-bottom: 10px;
+}
+
+.section__text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 25px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.section__text:last-child {
+  margin-bottom: 0;
+}
+
+.section__text--last-with-margin:last-child {
+  margin-bottom: 30px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.section__text b {
+  font-weight: 600;
+}
+
+.section__text a {
+  color: #0ed032;
+}
+
+.section__text a:hover {
+  color: #0ed032;
+  text-decoration: underline;
+}
+
+.section__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.section--dark {
+  background-color: #28282d;
+}
+.paginationButton {
+  color: #fff;
+}
+.partnerSection:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  display: block;
+  background-image: linear-gradient(90deg, #0ed032 0%, #58ff8d 100%);
+  box-shadow: 0 0 20px 0 rgba(2, 93, 17, 0.5);
+}
+
+.section--first {
+  margin-top: 70px;
+}
+
+.section--first .section__title {
+  margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .section__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  #partnerSection .section__title {
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #28282d;
+  }
+  .section__text {
+    color: #28282d;
+  }
+
+  .section__title--no-margin {
+    margin-bottom: 20px;
+    color: #28282d;
+  }
+
+  .section__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section__btn {
+    margin: 20px auto 15px;
+  }
+
+  .section--first {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section__text--last-with-margin:last-child {
+    margin-bottom: 30px;
+  }
+
+  .section__title--no-margin {
+    margin-bottom: 15px;
+  }
+}
+.partner {
+  display: block;
+  margin: 15px 0;
+
+  &:hover {
+    .partner__img {
+      opacity: 1;
+    }
+  }
+}
+
+.partner__img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  transition: 0.4s ease;
+  opacity: 0.75;
+}
+
+@media (min-width: 992px) {
+  .partner {
+    margin: 20px 0;
+  }
+}

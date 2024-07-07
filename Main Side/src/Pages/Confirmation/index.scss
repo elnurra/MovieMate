@@ -1,0 +1,44 @@
+.email-confirmation-container {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 24px;
+  padding: 20px; /* Добавьте внутренние отступы */
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+
+  .email-confirmation-title {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #0ed032;
+    @media (max-width: 768px) {
+      font-size: 1.8em;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.6em;
+    }
+  }
+
+  .email-confirmation-message {
+    font-size: 1.2em;
+    color: white;
+
+    @media (max-width: 768px) {
+      font-size: 1em;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.8em;
+    }
+  }
+}

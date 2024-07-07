@@ -1,0 +1,69 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.2.5",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@mdi/js": "^7.2.96",
+    "@mdi/react": "^1.6.1",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.8.2",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "formik": "^2.4.0",
+    "i": "^0.3.7",
+    "mdb-react-ui-kit": "^6.1.0",
+    "npm": "^9.6.6",
+    "primereact": "^9.4.0",
+    "ra-data-json-server": "^4.11.1",
+    "ra-input-rich-text": "^4.11.1",
+    "react": "^18.2.0",
+    "react-admin": "^4.11.1",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.44.3",
+    "react-ionicons": "^4.2.0",
+    "react-player": "^2.12.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.62.1",
+    "styled-components": "^5.3.10",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+.loading-progress {
+  width: 100%;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
+  align-items: flex-end;
+  height: 450px !important;
+}
+.css-epxdjg-MuiPaper-root-MuiCard-root {
+  height: 300px;
+  max-width: 300px !important;
+}
+.carousel-list-item {
+  height: 100%;
+  object-fit: cover;
+}
+.progress-bar {
+  height: 100%;
+  background-color: #0ed032;
+  transition: width 0.3s ease-in-out;
+}
+.MuiGrid-root {
+  display: flex;
+  justify-content: center;
+}
+.carousel-control-prev-icon {
+  background-image: none;
+  color: #0ed032;
+
+  text-decoration: none;
+}
+.carousel-control-next-icon {
+  background-image: none;
+  color: #0ed032;
+  text-decoration: none;
+}

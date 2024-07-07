@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap");
+
+// Variables
+$background-color: #e8eaef;
+$body-background: #f28a4b;
+$text-color: #e8eaef;
+$heading-color: #e8eaef;
+$link-hover-color: #0ed032;
+$white: #ffffff;
+$dark-background: #2f2c33;
+$green: #0b8a6d;
+$input-border-color: #78757c;
+$font-family: 'Poppins', sans-serif;
+
+// Mixins
+@mixin mQ($rem) {
+  @media screen and (min-width: $rem) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-class {
+  background: $body-background;
+  width: 100%;
+  font-family: $font-family;
+  letter-spacing: 2px;
+  min-height: 100vh;
+}
+
+.section-class {
+  font-family: $font-family;
+  font-weight: 300;
+  padding-block: min(20vh, 5rem);
+  text-align: center;
+  margin-top: 30px;
+  width: calc(min(90rem, 90%));
+  margin-inline: auto;
+
+  .heading-class {
+    font-size: clamp(3rem, 2.4286rem + 2.2857vw, 5rem);
+    color: $heading-color;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .paragraph-class {
+    line-height: 1.7;
+    color: $text-color;
+    max-width: 70rem;
+    margin: 0 auto;
+    font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
+  }
+
+  .cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    gap: 2rem;
+
+    @include mQ(51rem) {
+      gap: 3.5rem;
+    }
+
+    .card {
+      position: relative;
+      text-align: left;
+
+      .social-icon {
+        background: $heading-color;
+        padding: 1rem 1.75rem;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+
+        i {
+          color: $dark-background;
+          font-size: 1.4rem;
+
+          &:hover {
+            color: $link-hover-color;
+          }
+        }
+      }
+
+      .card-img-wrapper {
+        position: relative;
+
+        .image-class {
+          max-width: 100%;
+          display: block;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          object-position: top;
+          filter: grayscale(100%);
+          transition: 0.5s ease;
+
+          &:hover {
+            filter: grayscale(0%);
+          }
+        }
+      }
+
+      .card-content-wrapper {
+        margin-left: auto;
+        max-width: 90%;
+
+        .card-content {
+          display: block;
+          background: $white;
+          transition: 0.5s ease;
+          padding: 4.5rem 2rem 0 3.2rem;
+
+          > .svg-wrapper {
+            text-align: right;
+          }
+
+          .card-title {
+            font-size: clamp(1.15rem, 1.1071rem + 0.1714vw, 1.3rem);
+            font-weight: 800;
+            color: #2f2c33;
+            text-transform: capitalize;
+          }
+
+          .card-subtitle {
+            color: #0ed032;
+            font-size: 0.9rem;
+            text-transform: capitalize;
+          }
+
+          .svg-class {
+            display: inline-block;
+            text-align: right;
+            width: 60px;
+            color: $link-hover-color;
+          }
+        }
+      }
+
+      .card-img-wrapper:hover ~ .card-content-wrapper .card-content,
+      .card-content-wrapper:hover .card-content {
+        background: $link-hover-color;
+
+        .card-title,
+        .card-subtitle,
+        .svg-class {
+          color: $white;
+        }
+      }
+    }
+  }
+}

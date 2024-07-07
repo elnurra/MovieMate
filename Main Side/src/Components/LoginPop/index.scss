@@ -1,0 +1,21 @@
+.sign__group--checkbox input:checked + label:after {
+  content: "\2713";
+  font-family: "Ionicons";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  transition: 0.4s;
+  color: #0ed032;
+}
+@media (max-width: 768px) {
+  .close-button {
+    position: absolute;
+    left: 284px;
+    top: 120px;
+  }
+}
